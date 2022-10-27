@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;800&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bg {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+}
+
+
+/* navigation */
+.megamenu {
+    float: left;
+}
+
+.megamenu>li {
+    display: inline-block;
+    height: 60px;
+}
+
+.item>a {
+    padding: 10px 20px;
+    display: block;
+    height: 100%;
+    line-height: 36px;
+    color: #333;
+    font-weight: 600;
+}
+
+.item>a .arrow {
+    transform: rotate(270deg);
+    height: 22px;
+    width: 22px;
+    display: inline-block;
+    margin-left: -10px;
+}
+
+.item>a:hover {
+    color: #00ff37;
+}
+
+.item>a:hover+.block,
+.item .block:hover {
+    display: block;
+}
+
+
+/* block submenu content */
+
+.block {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    padding: 20px 10px;
+    box-shadow: 1px 0 10px rgb(131, 131, 131);
+}
+
+.block .sub-menu {
+    float: left;
+    width: 15%;
+}
+
+.block .sub-menu-content {
+    float: right;
+    width: 85%;
+}
+
+.sub-menu li {
+    display: block;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+.sub-menu li a {
+    font-weight: 600;
+    color: #333;
+}
+
+.sub-menu li a:hover {
+    color: #00ff37;
+}
+
+/* 
+.sub-menu-content .notice {
+    width: 33.33%;
+    float: left;
+    padding: 10px;
+} */
+
+#third-more-nav {
+    display: grid;
+    column-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 30px;
+}
+.third-nav-col {
+    font-size: 18px;
+}
+.third-nav-col p{
+    color: #302c2c;
+    padding: 8px 0 8px 15px;
+    border-radius: 3px;
+}
+.third-nav-header {
+    font-weight: 600;
+    color: #333;
+    margin-top: 40px;
+    padding-left: 15px;
+}
